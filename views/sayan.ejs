@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram profile page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="main">
+
+        <div id="top">
+
+            <img class="insta" src="/pngegg.png">
+            <form id="form" method="get" action="/post">
+                <input placeholder="name" name="name">
+                <button id="btn">🔎</button>
+            </form>
+
+        </div>
+
+       
+        <div class="profile_details">
+
+            <div class="profile_picture">
+                <div class="display-photo"><img id="sa" src="<%=data.dp%>"></div>
+            </div>
+
+            <div class="profile_infoo">
+                <div class="info" id="if1">
+                    <h2><%=data.name%></h2>
+                    <button id="Follow">Follow</button>
+                    <button id="Massage">Massage</button>
+                </div>
+                <div class="info" id="if2"></div>
+                <div class="info" id="if3">
+                    <span id="p"><b>3</b> posts</span>
+                    <span id="fs"><b><%= data.followers %></b> followers</span>
+                    <span id="fi"><b><%= data.following %></b> following</span>
+                </div>
+                <div class="info" id="if4">
+                    <div class="inside_info" id="isf1"><h5>sweet and good <%=data.name%></h5></div>
+                    
+                    <div class="inside_info" id="isf2"><p>@<%=data.name%></p></div>
+                    <div class="inside_info" id="isf3"><p>The latest ⬇️</p></div>
+                    <div class="inside_info" id="isf4"><p><a href="#">msft.it/MSFTlinkinbio+1</a></p></div>
+                    <div class="inside_info" id="isf5"><p>Followed by ffp_360</p></div>
+                </div>
+            </div>
+
+        </div> 
+        
+        <div class="middle">
+            <div id="line"></div>
+        </div>
+
+        <div class="profile_posts">
+            <% for (let post of data.posts) { %>
+                
+                <div class="post" id="p1"><img src="<%=post.image%>" style="height: 260px;
+                                                                            width: 260px;
+                                                                            margin-bottom: 9px;">
+                    <p>Likes: <%= post.likes %> &nbsp;&nbsp;&nbsp;&nbsp; 
+                        Comments: <%= post.comments %>
+                    </p>
+                </div>
+
+            <% } %>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

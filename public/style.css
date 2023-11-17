@@ -1,0 +1,208 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#sa {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.main {
+    width: 935px;
+    height: 602px;
+    padding-top: 20px;
+}
+
+.profile_details {
+    height: 230px;
+    width: 934px;
+    display: flex;
+}
+
+.profile_picture {
+    height: 100%;
+    width: 291px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    border: 1px solid green;
+    background-color: green;
+}
+
+.profile_infoo {
+    height: 100%;
+    width: 613px;
+}
+
+.info {
+    height: 20px;
+    width: 613px;
+}
+
+#if1 {
+    height: 48px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+button {
+    padding: 5px 25px 5px 25px ;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#Follow {
+    font-weight: 700;
+    background-color: rgb(1, 178, 247);
+    color: white;
+    margin-left: 30px;
+}
+
+#Follow:hover {
+    background-color: rgb(0, 128, 255);
+}
+
+#Massage {
+    margin-left: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
+#Massage:hover {
+    background-color: rgb(208, 208, 208);
+}
+
+#if2 {
+    height: 24px;
+}
+
+#if3 {
+    height: 38px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+}
+
+span {
+    margin: 10px;
+}
+
+#if4 {
+    height: 119px;
+}
+
+.inside_info {
+    height: 20px;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.middle {
+    height: 58px;
+    width: 100%;
+}
+
+#line {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(212, 212, 212);
+}
+
+.profile_posts {
+    height: 310px;
+    width: 100%;
+    display: flex;
+}
+
+.post {
+    height: 309px;
+    width: 309px;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#p1 {
+    background-color: rgba(0, 0, 0, 0.083)
+}
+
+#p2 {
+    background-color: rgb(150, 86, 210);
+}
+
+#p3 {
+    background-color: rgb(212, 82, 82);
+}
+
+#form {
+    position: relative;
+    left: 160px;
+    height: 46px;
+}
+
+input {
+    width: 258px;
+    padding: 10px;
+    border: 0px solid rgba(0, 0, 0, 0.45);
+    background-color: #00000023;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+}
+
+#btn {
+    width: 20px;
+    background-color: white;
+}
+
+.insta {
+    width: 160px;
+    height: 60px;
+}
+
+#top {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.329);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.329);
+}
