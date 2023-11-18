@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, "/public")));   //public path ke sta
 app.set("view engine", "ejs");  //view engine hisabe ejs set kora holo
 app.set("views", path.join(__dirname, "/views"));   //view path ke static koraholo
 
-app.get("/", (req, res)=> {
+app.get("/ig", (req, res)=> {
     res.render("home.ejs")
 });             //home page ar render ki hobe set kora
 
@@ -36,7 +36,7 @@ app.get("/post", (req, res)=> {
     if(data) {
         res.render("sayan.ejs", {data}); 
     } else {
-        res.render("err.ejs")
+        res.render("err.ejs", {name})
     }
 })
 
